@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/*variables para acceder desde cualquier elemento*/
+:root{
+    /*variable para que tenga 100px arriba y 0 a los lados*/
+    --padding-container: 100px 0;
+    --color-title: #001A49; /*colo para los titulos*/
+}
+
+/*elector de body*/
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main__center{
+    background-color: aquamarine;
+}
+/*Estilo del contenedor principal*/
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagen/portada.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 51% 100%, 0 91%);
+    z-index: -1;
+}
+
+/*Menu de navegacion*/
+.nav{
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center; /*Aliendo los items a un lado del otro*/
+}
+
+/*Cambios al titulo del hero*/
+.nav__title{
+    font-weight: 300;
+}
+
+/*Cambios a los elementos del nav*/
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+/*para quitarle el efecto lista a los items*/
+.nav__items{
+    list-style: none;
+}
+
+/* para que el texto del nav sea blanco*/
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Modificamos la pantalla principal (Hero)*/
+.hero__container{
+    max-width: 800px;
+    display: grid;
+    --padding-container:0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+/*Cambios en el H1 de la pantalla principal*/
+.hero__title{
+    font-size: 3rem;
+}
+
+/*Cambios a parrafo de la pantalla principal*/
+.hero__paragraph{
+    margin-bottom: 20px;
+}
+
+/*Se cambia el estilo del boton principal*/
+.cta{
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/* About */
+
+.about {
+    text-align: center;
+}
+
+.about__subtitle {
+    color: var(--color-title);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.about__paragrah {
+    text-align: justify;
+    font-size: 12px;
+}
+
+.about__main {
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.about__list {
+    text-align: justify;
+    list-style-type: square; /* Cambia el tipo de viñeta */
+    font-size: 12px;
+}
+
+/*estilos del formulario de mensajes*/
+

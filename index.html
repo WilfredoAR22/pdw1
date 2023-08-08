@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutemala Triunfa</title>
+    <link rel="stylesheet" href="./estilo/normalize.css">
+    <link rel="stylesheet" href="./estilo/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./imagen/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--contenedor del loby-->
+    <header class="hero">
+        <!--Menu de navegacion-->
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Guatemala</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class=" nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class=" nav__items">
+                    <a href="#" class="nav__links">Personajes</a>
+                </li>
+                <li class=" nav__items">
+                    <a href="#" class="nav__links">Mensajes</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Seccion de la pantalla principal -->
+        <section class="hero__container container">
+            <h1 class="hero__title">Personajes Destacados de Guatemala</h1>
+            <p class="hero__paragraph">En Guatemala nos gusta el deporte y el arte, estamos dispuesto a apoyarte en todo
+                lo que necesites.</p>
+            <a href="#" class="cta">Conoce a los mejores</a>
+        </section>
+    </header>
+
+    <main class="main__center">
+
+        <!--Seccion para almacenar la informacion de mis 3 personajes-->
+        <section class="container about">
+            <div class="about__main">
+                <article>
+                    <img src="./imagen/duolingo.jpg" class="img-thumbnail" alt="Luis von Ahn">
+                    <h3 class="about__title">Luis von Ahn</h3>
+                    <div class="achievements">
+                        <h4 class="about__subtitle">Informacion Personal</h4>
+                        <p class="about__paragrah">Luis von Ahn es un informático y empresario guatemalteco destacado
+                            por desarrollar proyectos tecnológicos a nivel mundial,tales como Captcha y Recaptcha.</p>
+                    </div>
+                    <div class="personal-data">
+                        <h4 class="about__subtitle">Logros</h4>
+                        <ul>
+                            <li class="about__list">Creación del captcha y recaptcha.</li>
+                            <li class="about__list">Duolingo.</li>
+                            <li class="about__list">El premio MacArthur.</li>
+                            <li class="about__list">Recibió el premio Lemelson-MIT por su invención y aporte a la ciberseguridad en el año 2018.</li>
+                            <li class="about__list">En 2022 fue destacado por ABC News por Duolingo.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="./imagen/arjona.jpg" class="img-thumbnail" alt="Ricardo Arjona">
+                    <h3 class="about__title">Ricardo Arjona</h3>
+                    <div class="achievements">
+                        <h4 class="about__subtitle">Informacion Personal</h4>
+                        <p class="about__paragrah">Édgar Ricardo Arjona Morales es conocido por su nombre artístico como
+                            Ricardo Arjona, es un
+                            cantautor y músico guatemalteco, considerado uno de los artistas más exitosos de
+                            Iberoamérica.</p>
+                    </div>
+                    <div class="personal-data">
+                        <h4 class="about__subtitle">Logros</h4>
+                        <ul>
+                            <li class="about__list">Premios Billboard Latin Music 2017 por su trayectoria musical.</li>
+                            <li class="about__list">Premios lo Nuestro 2015 premio a la excelencia.</li>
+                            <li class="about__list">Premios Billboard Latin Music 2010.</li>
+                            <li class="about__list">Premios Billboard Latin Music 2007.</li>
+                            <li class="about__list">Grammy 2007 premio al mejor álbum pop latino.</li>
+                            <li class="about__list">Grammy Latino 2006.</li>
+                            <li class="about__list">Premios lo Nuestro 2004.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="./imagen/chef.jpg" class="img-thumbnail" alt="Mirciny Moliviatis">
+                    <h3 class="about__title">Mirciny Moliviatis</h3>
+                    <div class="achievements">
+                        <h4 class="about__subtitle">Informacion Personal</h4>
+                        <p class="about__paragrah">Mirciny Moliviatis es una chef y conductora guatemalteca que se ha
+                            destacado por varios títulos otorgados debido a su labor, así como por su participación en
+                            programas culinarios transmitidos a nivel nacional e internacional.</p>
+                    </div>
+                    <div class="personal-data">
+                        <h4 class="about__subtitle">Logros</h4>
+                        <ul>
+                            <li class="about__list">Fue nombrada Embajadora de la Cultura Gastronómica Guatemalteca por parte del Ministerio de Cultura y Deportes.</li>
+                            <li class="about__list">Obtuvo el premio Tenedor de Oro por la Cámara de la Industria y el Instituto Guatemalteco de Turismo.</li>
+                            <li class="about__list">Premio a la Mujer del Año por Cremy.</li>
+                            <li class="about__list">Mujer del año 2013 por Filgua.</li>
+                            <li class="about__list">Guatemalteca Ilustre 2013 por Seguros Universales.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Mensajes a los mejores</h1>
+                <form action="" method="">
+                              
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                  </div>
+            
+                  <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                  </div>
+            
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                                          
+                  <div class="mb-3">
+                    <label for="pasatiempos" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="pasatiempos" name="pasatiempos"></textarea>
+                  </div>
+            
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+              <!-- Scripts de Bootstrap y jQuery -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </section>
+        
+    </main>
+    
+
+</body>
+
+</html>
